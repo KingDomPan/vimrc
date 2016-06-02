@@ -360,3 +360,47 @@ endif
 if filereadable($HOME.'/.vimrc_local')
 	source $HOME/.vimrc_local
 endif
+
+"------  自定义配置  -----
+
+" Tagbar
+nmap <F5> :TagbarToggle<cr>
+let g:tagbar_width=30
+let g:tagbar_autofocus=1
+let g:tagbar_sort=0
+let g:tagbar_compact=1
+
+" ZenCoding
+let g:user_emmet_expandabbr_key='<C-j>'
+
+" NeoComplCache
+let g:neocomplcache_enable_at_startup=1
+let g:neoComplcache_disableautocomplete=1
+let g:neocomplcache_enable_underbar_completion=1
+let g:neocomplcache_enable_camel_case_completion=1
+let g:neocomplcache_enable_smart_case=1
+let g:neocomplcache_min_syntax_length=3
+let g:neocomplcache_lock_buffer_name_pattern='\*ku\*'
+set completeopt-=preview
+"
+imap <C-k> <Plug>(neocomplcache_snippets_force_expand)
+smap <C-k> <Plug>(neocomplcache_snippets_force_expand)
+imap <C-l> <Plug>(neocomplcache_snippets_force_jump)
+smap <C-l> <Plug>(neocomplcache_snippets_force_jump)
+
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType c setlocal omnifunc=ccomplete#Complete
+
+if !exists('g:neocomplcache_omni_patterns')
+	let g:neocomplcache_omni_patterns={}
+endif
+let g:neocomplcache_omni_patterns.erlang='[a-zA-Z]\|:'
+
+" SuperTab
+let g:SuperTabDefultCompletionType='context'
+let g:SuperTabDefaultCompletionType='<C-X><C-U>'
+let g:SuperTabRetainCompletionType=2
