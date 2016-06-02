@@ -128,7 +128,7 @@ nnoremap <silent> <leader>b :nohlsearch<CR>
 
 " http://www.vim.org/scripts/script.php?script_id=2572
 " <Leader>a will open a prmompt for a term to search for
-noremap <leader>a :Ack 
+noremap <leader>a :Ack
 
 " <Leader>A will close the new window created for that ack search
 noremap <leader>A <C-w>j<C-w>c<C-w>l
@@ -181,10 +181,10 @@ nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gr :Gremove<CR>
 nnoremap <Leader>gl :Glog<CR>
 nnoremap <Leader>gb :Gblame<CR>
-nnoremap <Leader>gm :Gmove 
-nnoremap <Leader>gp :Ggrep 
+nnoremap <Leader>gm :Gmove
+nnoremap <Leader>gp :Ggrep
 nnoremap <Leader>gR :Gread<CR>
-nnoremap <Leader>gg :Git 
+nnoremap <Leader>gg :Git
 nnoremap <Leader>gd :Gdiff<CR>
 
 
@@ -404,3 +404,15 @@ let g:neocomplcache_omni_patterns.erlang='[a-zA-Z]\|:'
 let g:SuperTabDefultCompletionType='context'
 let g:SuperTabDefaultCompletionType='<C-X><C-U>'
 let g:SuperTabRetainCompletionType=2
+
+map <leader><leader>f :call JsBeautify()<cr>
+" or
+autocmd FileType javascript noremap <buffer>  <leader><leader>f :call JsBeautify()<cr>
+" for json
+autocmd FileType json noremap <buffer> <leader><leader>f :call JsonBeautify()<cr>
+" for jsx
+autocmd FileType jsx noremap <buffer> <leader><leader>f :call JsxBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <leader><leader>f :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <leader><leader>f :call CSSBeautify()<cr>
