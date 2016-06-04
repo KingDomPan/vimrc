@@ -1,0 +1,15 @@
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/neocomplcache.vim"]
+	path = bundle/neocomplcache.vim
+	url = https://github.com/Shougo/neocomplcache.vim.git
