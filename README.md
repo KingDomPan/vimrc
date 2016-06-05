@@ -1,4 +1,4 @@
-# /home/tlhunter/.vim/vimrc
+# /home/panqd/.vim/vimrc
 
 ![Screenshot](./screenshot.png "Screenshot of this .vimrc in action")
 
@@ -14,16 +14,9 @@ You can run `git pull` inside of `~/.vim` if you'd ever like to grab the latest 
 
 ```bash
 cd ~
-git clone git://github.com/tlhunter/vimrc.git .vim
-ln -s ~/.vim/vimrc ~/.vimrc # Optional, needed for some VIM installations
-```
-
-### One Time Download
-
-This method might be more sane. Simply downlaod the latest version, extract to `~/.vim`, and configure to your liking.
-
-```bash
-wget https://github.com/tlhunter/vimrc/archive/master.zip
+git clone git://github.com/panqd/vimrc.git .vim
+ln -s ~/.vim/vimrc ~/.vimrc
+cd .vim && git submodule update --init --recursive # install some plugins which config in .gitmodules
 ```
 
 ## Features
@@ -94,3 +87,9 @@ Other than the myriad of built-in methods for navigating text...
 
 * Use `<Leader>c` to copy the highlighted text into the OS clipboard
 * Use `<Leader>v` to paste the OS clipboard into the document
+
+### Format
+* Use `<Leader><Leader>f` to format javascript, json, html, css, jsx file
+
+### Edit Html
+* Use `<c-j>` to expanded html tags in HTML file by **emmet**
