@@ -414,5 +414,7 @@ autocmd FileType json noremap <buffer> <leader><leader>f :call JsonBeautify()<cr
 autocmd FileType jsx noremap <buffer> <leader><leader>f :call JsxBeautify()<cr>
 " for html
 autocmd FileType html noremap <buffer> <leader><leader>f :call HtmlBeautify()<cr>
+" for xml 
+autocmd FileType xml noremap <buffer> <leader><leader>f :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <leader><leader>f :call CSSBeautify()<cr>
