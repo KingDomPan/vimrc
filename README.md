@@ -1,4 +1,4 @@
-# /home/panqd/.vim/vimrc
+# /Users/panqd/.vim/vimrc
 
 ![ScreenVim](./screenvim.png "Screenshot of this .vimrc in action")
 ![ScreenMVim](./screenmvim.png "Screenshot of this .vimrc in action")
@@ -15,9 +15,10 @@ You can run `git pull` inside of `~/.vim` if you'd ever like to grab the latest 
 
 ```bash
 cd ~
-git clone git://github.com/panqd/vimrc.git .vim
+git clone git://github.com/KingDomPan/vimrc.git .vim
 ln -s ~/.vim/vimrc ~/.vimrc
-cd .vim && git submodule update --init --recursive # install some plugins which config in .gitmodules
+cd .vim && git submodule update --init --recursive # 安装所有子模块依赖
+vim +GoInstallBinaries +qall # 安装go工具链
 ```
 
 ## Features
