@@ -18,6 +18,7 @@ cd ~
 git clone git://github.com/KingDomPan/vimrc.git .vim
 ln -s ~/.vim/vimrc ~/.vimrc
 cd .vim && git submodule update --init --recursive # 安装所有子模块依赖
+./installycm.sh # 安装YCM
 vim +GoInstallBinaries +qall # 安装go工具链
 ```
 
