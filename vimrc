@@ -272,9 +272,9 @@ if has("gui_running")
 
 	if has("gui_macvim") " OS X
 		"set guifont=Monaco:h14
-		"set guifont=Monaco:h15
-		set macligatures
-		set guifont=Fira\ Code:h15
+		set guifont=Monaco:h15
+		"set macligatures
+		"set guifont=Fira\ Code:h16
 
 		set noantialias
 		"set transparency=15
@@ -548,3 +548,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" Config For YouCompleteMe
+" This Config For Typescript Co
+if !exists("g:ycm_semantic_triggers")
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
