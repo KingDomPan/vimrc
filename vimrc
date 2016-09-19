@@ -254,7 +254,8 @@ if has("gui_running")
 
 	" Highlights the current line background
 	set cursorline
-	colorscheme seti
+	" colorscheme seti
+	colorscheme hybrid
 
 	"autocmd VimEnter * TagbarOpen
 
@@ -271,7 +272,10 @@ if has("gui_running")
 
 	if has("gui_macvim") " OS X
 		"set guifont=Monaco:h14
-		set guifont=Monaco:h15
+		"set guifont=Monaco:h15
+		set macligatures
+		set guifont=Fira\ Code:h15
+
 		set noantialias
 		"set transparency=15
 
