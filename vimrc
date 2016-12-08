@@ -254,8 +254,8 @@ if has("gui_running")
 
 	" Highlights the current line background
 	set cursorline
-	" colorscheme seti
-	colorscheme hybrid
+	colorscheme seti
+	" colorscheme hybrid
 
 	"autocmd VimEnter * TagbarOpen
 
@@ -387,6 +387,9 @@ let g:tagbar_compact=1
 
 " ZenCoding
 let g:user_emmet_expandabbr_key='<C-j>'
+let g:user_emmet_mode='inv'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,less,sass,js,jsx EmmetInstall
 
 " NeoComplCache
 let g:neocomplcache_enable_at_startup=1
