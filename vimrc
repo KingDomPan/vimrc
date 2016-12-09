@@ -254,8 +254,9 @@ if has("gui_running")
 
 	" Highlights the current line background
 	set cursorline
-	colorscheme seti
+	" colorscheme seti
 	" colorscheme hybrid
+	colorscheme onedark
 
 	"autocmd VimEnter * TagbarOpen
 
