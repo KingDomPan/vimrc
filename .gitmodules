@@ -31,15 +31,15 @@
 [submodule "bundle/vim-es6"]
 	path = bundle/vim-es6
 	url = https://github.com/isRuslan/vim-es6.git
-[submodule "bundle/vim-python-pep8-indent"]
-	path = bundle/vim-python-pep8-indent
-	url = https://github.com/hynek/vim-python-pep8-indent.git
-[submodule "bundle/vim-flake8"]
-	path = bundle/vim-flake8
-	url = https://github.com/nvie/vim-flake8.git
 [submodule "bundle/tsuquyomi"]
 	path = bundle/tsuquyomi
 	url = https://github.com/Quramy/tsuquyomi.git
 [submodule "bundle/vimproc.vim"]
 	path = bundle/vimproc.vim
 	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "bundle/asyncrun"]
+	path = bundle/asyncrun
+	url = https://github.com/skywind3000/asyncrun.vim.git
